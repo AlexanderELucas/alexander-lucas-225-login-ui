@@ -37,52 +37,37 @@ html,body{
     /* set font */
     font-family: 'Dosis', sans-serif;
     font-size: 24px;
-    margin: 0px;
     /* border: 5px solid blue; */
 }
 
 /* PASSWORD */
 /* create margin for password container */
-.password {
-    padding: 20px;
+.password-con {
+    margin: 20px;
     /* border: 5px solid blue; */
 }
 /* only bottom border for username/password */
 input[type=password] {
     border: 0px;
     border-bottom: 1px solid #291f1f;  
-    padding: 5px;  
 }
-/* increase padding when typing in password */
-input[type=password]:focus {
-    padding: 5px;
-}
-
 
 /* USERNAME */
 /* create margin for username container */
-.username {
-    padding: 20px;
+.username-con {
+    margin: 20px;
     /* border: 5px solid blue; */
 }
 /* eliminate top and side border of text field */
 input[submit=text] {
     border: 0px;
     border-bottom: 1px solid #291f1f;
-    padding: 5px;
 }
-/* increase padding when typing in username */
-input[submit=text]:focus {
-    padding: 5px; 
-    /* border: 0px 0px 0px 0px;  */
-}
-
-
 
 /* SUBMIT */
-.submit {
+.submit-button {
     /* border: 5px solid blue; */
-    padding: 5px;
+    margin: 5px;
     margin-bottom: 20px;
 }
 /* format color and aspects of sign in button */
@@ -91,7 +76,9 @@ input[submit=text]:focus {
     color: #fbfbfb;
     border: 0px;
     border-radius: 35px 35px 35px 35px;
+    /* increases button size */
     padding: 10px;
+    margin-bottom: 5px;
     transition: 0.5s;
     width: 200px;
 }
@@ -111,3 +98,8 @@ input[submit=text]:focus {
     transition: 0.2s;
 }
 
+
+/* Remove outline from username/password text field */
+input:focus {
+    outline: none;
+}
